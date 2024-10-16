@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login Page</h2>
+        <form id="login-form">
+            
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <div id="username-error" class="error-message"></div>
+
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <img src="./picture/view.png" alt="Show/Hide" id="toggle-password-icon" class="password-toggle" onclick="togglePasswordVisibility()">
+            </div>
+            <div id="password-error" class="error-message"></div>
+
+            <select id="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="student">Student</option>
+                <option value="lecturer">Lecturer</option>
+            </select>
+            <div id="role-error" class="error-message"></div>
+
+            <button type="submit" id="login-btn" disabled>Login</button>
+
+            <button type="button" class="small-btn" onclick="requestForm()">Request Form</button>
+            <button type="button" class="small-btn" onclick="dashboard()">Dashboard</button>
+            <button type="button" class="small-btn" onclick="logout()">Logout</button>
+        </form>
+
+        <p id = "space1"></p>
+        <p id = "space2"></p>
+        <p id = "space3"></p>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

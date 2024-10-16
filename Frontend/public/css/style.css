@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 95%; /* ใช้ 95% สำหรับความกว้างของ input และ select */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* ปรับขนาดรวม padding และ border */
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 20px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; /* ขนาดของไอคอน */
+    height: 20px; /* ขนาดของไอคอน */
+}
+
+button {
+    width: 100%; /* ปรับให้ปุ่มกว้างเต็มที่ */
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #a5d6a7; /* สีสำหรับปุ่มที่ไม่สามารถกดได้ */
+}
+
+.small-btn {
+    background-color: #1976d2;
+    color: white;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 12px;
+}
+
+/* ปรับสไตล์ select */
+select {
+    padding: 10px;
+    margin-bottom: 25px; /* เว้นระยะใต้ select */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 95%; /* กำหนดความกว้างให้เท่ากับ input */
+    box-sizing: border-box; /* ปรับขนาดรวม padding และ border */
+}
