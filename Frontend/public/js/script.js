@@ -35,6 +35,7 @@ form.addEventListener('submit', async function (event) {
     // ตรวจสอบข้อมูลในฟอร์ม
     const usernameInput = document.getElementById('username').value;
     const passwordInput = document.getElementById('password').value;
+    const role = document.getElementById('role').value; // เพิ่มส่วนนี้เพื่อดึงค่า role
 
     let hasError = false;
 
@@ -83,10 +84,6 @@ form.addEventListener('submit', async function (event) {
     }
 });
 
-// ฟังก์ชันจำลองการเข้าสู่ระบบ (ใช้แทน API ในการทดสอบ)
-function simulateLogin(username, password, role) {
-    return username === 'test' && password === '1234' && role === 'student'; // ตัวอย่างข้อมูลจำลอง
-}
 
 function requestForm() {
     alert('Request Form Clicked');
